@@ -4,14 +4,20 @@ from datetime import timedelta
 
 # parameters
 from_city = "Dhaka"
-to_city = "Sylhet"
+to_city = "Khulna"
+
+print("Welcome to VacantCoach")
+from_city = input("Please enter the station name you want to depart from: ")
+to_city = input("Please enter the station name you want to go: ")
 
 date = datetime.datetime.today()
 delta_time = timedelta(days=1)
 print('\n')
 print(f"**   {from_city} ->> {to_city}   **")
 print('\n')
-for i in range(11):
+print("Searching for available seats. Please wait.....")
+print('\n')
+for i in range(1):
 
     black_day = True
 
@@ -56,3 +62,5 @@ for i in range(11):
     if black_day:
         print("NO SEATS AVAILABLE")
     print('\n')
+
+print("You can buy tickets from https://eticket.railway.gov.bd if they are available at that time. Thanks for using VacantCoach.")
