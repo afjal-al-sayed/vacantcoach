@@ -17,7 +17,7 @@ print(f"**   {from_city} ->> {to_city}   **")
 print('\n')
 print("Searching for available seats. Please wait.....")
 print('\n')
-for i in range(1):
+for i in range(11):
 
     black_day = True
 
